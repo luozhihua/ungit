@@ -109,6 +109,8 @@ var argv = optimist
   .usage('ungit [-v] [-b] [--cliconfigonly] [--gitVersionCheckOverride]')
   .alias('b', 'launchBrowser')
   .alias('v', 'version')
+  .alias('p', 'port')
+  .describe('p', 'ungit listens on this port, default port: 8448')
   .describe('gitVersionCheckOverride', 'Ignore git version check and allow ungit to run with possibly lower versions of git')
   .describe('b', 'Launch a browser window with ungit when the ungit server is started. --no-b or --no-launchBrowser disables this.')
   .describe('cliconfigonly', 'Ignore the default configuration points and only use parameters sent on the command line')
